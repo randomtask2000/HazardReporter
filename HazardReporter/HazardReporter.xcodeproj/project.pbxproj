@@ -7,83 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		708AB1B925854E0F00DE21B9 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB1B825854E0F00DE21B9 /* Tests_iOS.swift */; };
-		708AB1C425854E0F00DE21B9 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB1C325854E0F00DE21B9 /* Tests_macOS.swift */; };
-		708AB1C625854E0F00DE21B9 /* HazardReporter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19A25854E0D00DE21B9 /* HazardReporter.xcdatamodeld */; };
-		708AB1C725854E0F00DE21B9 /* HazardReporter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19A25854E0D00DE21B9 /* HazardReporter.xcdatamodeld */; };
-		708AB1C825854E0F00DE21B9 /* HazardReporterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19C25854E0D00DE21B9 /* HazardReporterApp.swift */; };
-		708AB1C925854E0F00DE21B9 /* HazardReporterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19C25854E0D00DE21B9 /* HazardReporterApp.swift */; };
-		708AB1CA25854E0F00DE21B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19D25854E0D00DE21B9 /* ContentView.swift */; };
-		708AB1CB25854E0F00DE21B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19D25854E0D00DE21B9 /* ContentView.swift */; };
-		708AB1CC25854E0F00DE21B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19E25854E0D00DE21B9 /* Persistence.swift */; };
-		708AB1CD25854E0F00DE21B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708AB19E25854E0D00DE21B9 /* Persistence.swift */; };
-		708AB1CE25854E0F00DE21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708AB19F25854E0F00DE21B9 /* Assets.xcassets */; };
-		708AB1CF25854E0F00DE21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708AB19F25854E0F00DE21B9 /* Assets.xcassets */; };
-		708AB1E5258563FA00DE21B9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708AB1E4258563FA00DE21B9 /* CloudKit.framework */; };
+		F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */; };
+		F20E3AEF2074EE3E00FDE78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AED2074EE3E00FDE78B /* Main.storyboard */; };
+		F20E3AF12074EE4000FDE78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AF02074EE4000FDE78B /* Assets.xcassets */; };
+		F20E3AF42074EE4000FDE78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AF22074EE4000FDE78B /* LaunchScreen.storyboard */; };
+		F20E3B022074EF6A00FDE78B /* ActiveHazardReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AFE2074EF6A00FDE78B /* ActiveHazardReportsViewController.swift */; };
+		F20E3B032074EF6A00FDE78B /* EditHazardReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AFF2074EF6A00FDE78B /* EditHazardReportViewController.swift */; };
+		F20E3B042074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3B002074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift */; };
+		F20E3B052074EF6A00FDE78B /* HazardReportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3B012074EF6A00FDE78B /* HazardReportDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		708AB1B525854E0F00DE21B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 708AB19525854E0D00DE21B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 708AB1A325854E0F00DE21B9;
-			remoteInfo = "HazardReporter (iOS)";
-		};
-		708AB1C025854E0F00DE21B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 708AB19525854E0D00DE21B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 708AB1AB25854E0F00DE21B9;
-			remoteInfo = "HazardReporter (macOS)";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		708AB19B25854E0D00DE21B9 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
-		708AB19C25854E0D00DE21B9 /* HazardReporterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazardReporterApp.swift; sourceTree = "<group>"; };
-		708AB19D25854E0D00DE21B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		708AB19E25854E0D00DE21B9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		708AB19F25854E0F00DE21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		708AB1A425854E0F00DE21B9 /* HazardReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazardReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		708AB1A725854E0F00DE21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		708AB1AC25854E0F00DE21B9 /* HazardReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazardReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		708AB1AE25854E0F00DE21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		708AB1AF25854E0F00DE21B9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		708AB1B425854E0F00DE21B9 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		708AB1B825854E0F00DE21B9 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		708AB1BA25854E0F00DE21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		708AB1BF25854E0F00DE21B9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		708AB1C325854E0F00DE21B9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		708AB1C525854E0F00DE21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		708AB1E2258563F800DE21B9 /* HazardReporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HazardReporter.entitlements; sourceTree = "<group>"; };
-		708AB1E4258563FA00DE21B9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		F20E3AE62074EE3E00FDE78B /* HazardReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazardReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F20E3AEE2074EE3E00FDE78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F20E3AF02074EE4000FDE78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F20E3AF32074EE4000FDE78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F20E3AF52074EE4000FDE78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20E3AFE2074EF6A00FDE78B /* ActiveHazardReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveHazardReportsViewController.swift; sourceTree = "<group>"; };
+		F20E3AFF2074EF6A00FDE78B /* EditHazardReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHazardReportViewController.swift; sourceTree = "<group>"; };
+		F20E3B002074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedHazardReportsViewController.swift; sourceTree = "<group>"; };
+		F20E3B012074EF6A00FDE78B /* HazardReportDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HazardReportDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		708AB1A125854E0F00DE21B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708AB1E5258563FA00DE21B9 /* CloudKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1A925854E0F00DE21B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1B125854E0F00DE21B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1BC25854E0F00DE21B9 /* Frameworks */ = {
+		F20E3AE32074EE3E00FDE78B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,185 +41,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		708AB19425854E0D00DE21B9 = {
+		F20E3ADD2074EE3E00FDE78B = {
 			isa = PBXGroup;
 			children = (
-				708AB1E2258563F800DE21B9 /* HazardReporter.entitlements */,
-				708AB19925854E0D00DE21B9 /* Shared */,
-				708AB1A625854E0F00DE21B9 /* iOS */,
-				708AB1AD25854E0F00DE21B9 /* macOS */,
-				708AB1B725854E0F00DE21B9 /* Tests iOS */,
-				708AB1C225854E0F00DE21B9 /* Tests macOS */,
-				708AB1A525854E0F00DE21B9 /* Products */,
-				708AB1E3258563FA00DE21B9 /* Frameworks */,
+				F20E3AE82074EE3E00FDE78B /* HazardReporter */,
+				F20E3AE72074EE3E00FDE78B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		708AB19925854E0D00DE21B9 /* Shared */ = {
+		F20E3AE72074EE3E00FDE78B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				708AB19C25854E0D00DE21B9 /* HazardReporterApp.swift */,
-				708AB19D25854E0D00DE21B9 /* ContentView.swift */,
-				708AB19E25854E0D00DE21B9 /* Persistence.swift */,
-				708AB19F25854E0F00DE21B9 /* Assets.xcassets */,
-				708AB19A25854E0D00DE21B9 /* HazardReporter.xcdatamodeld */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		708AB1A525854E0F00DE21B9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				708AB1A425854E0F00DE21B9 /* HazardReporter.app */,
-				708AB1AC25854E0F00DE21B9 /* HazardReporter.app */,
-				708AB1B425854E0F00DE21B9 /* Tests iOS.xctest */,
-				708AB1BF25854E0F00DE21B9 /* Tests macOS.xctest */,
+				F20E3AE62074EE3E00FDE78B /* HazardReporter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		708AB1A625854E0F00DE21B9 /* iOS */ = {
+		F20E3AE82074EE3E00FDE78B /* HazardReporter */ = {
 			isa = PBXGroup;
 			children = (
-				708AB1A725854E0F00DE21B9 /* Info.plist */,
+				F20E3AFB2074EF2300FDE78B /* Model */,
+				F20E3AFC2074EF3100FDE78B /* Views & Assets */,
+				F20E3AFD2074EF4200FDE78B /* View Controllers */,
+				F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */,
+				F20E3AF52074EE4000FDE78B /* Info.plist */,
 			);
-			path = iOS;
+			path = HazardReporter;
 			sourceTree = "<group>";
 		};
-		708AB1AD25854E0F00DE21B9 /* macOS */ = {
+		F20E3AFB2074EF2300FDE78B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				708AB1AE25854E0F00DE21B9 /* Info.plist */,
-				708AB1AF25854E0F00DE21B9 /* macOS.entitlements */,
 			);
-			path = macOS;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		708AB1B725854E0F00DE21B9 /* Tests iOS */ = {
+		F20E3AFC2074EF3100FDE78B /* Views & Assets */ = {
 			isa = PBXGroup;
 			children = (
-				708AB1B825854E0F00DE21B9 /* Tests_iOS.swift */,
-				708AB1BA25854E0F00DE21B9 /* Info.plist */,
+				F20E3AED2074EE3E00FDE78B /* Main.storyboard */,
+				F20E3AF02074EE4000FDE78B /* Assets.xcassets */,
+				F20E3AF22074EE4000FDE78B /* LaunchScreen.storyboard */,
 			);
-			path = "Tests iOS";
+			path = "Views & Assets";
 			sourceTree = "<group>";
 		};
-		708AB1C225854E0F00DE21B9 /* Tests macOS */ = {
+		F20E3AFD2074EF4200FDE78B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				708AB1C325854E0F00DE21B9 /* Tests_macOS.swift */,
-				708AB1C525854E0F00DE21B9 /* Info.plist */,
+				F20E3AFE2074EF6A00FDE78B /* ActiveHazardReportsViewController.swift */,
+				F20E3AFF2074EF6A00FDE78B /* EditHazardReportViewController.swift */,
+				F20E3B012074EF6A00FDE78B /* HazardReportDetailsViewController.swift */,
+				F20E3B002074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift */,
 			);
-			path = "Tests macOS";
-			sourceTree = "<group>";
-		};
-		708AB1E3258563FA00DE21B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				708AB1E4258563FA00DE21B9 /* CloudKit.framework */,
-			);
-			name = Frameworks;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		708AB1A325854E0F00DE21B9 /* HazardReporter (iOS) */ = {
+		F20E3AE52074EE3E00FDE78B /* HazardReporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 708AB1D225854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "HazardReporter (iOS)" */;
+			buildConfigurationList = F20E3AF82074EE4000FDE78B /* Build configuration list for PBXNativeTarget "HazardReporter" */;
 			buildPhases = (
-				708AB1A025854E0F00DE21B9 /* Sources */,
-				708AB1A125854E0F00DE21B9 /* Frameworks */,
-				708AB1A225854E0F00DE21B9 /* Resources */,
+				F20E3AE22074EE3E00FDE78B /* Sources */,
+				F20E3AE32074EE3E00FDE78B /* Frameworks */,
+				F20E3AE42074EE3E00FDE78B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "HazardReporter (iOS)";
-			productName = "HazardReporter (iOS)";
-			productReference = 708AB1A425854E0F00DE21B9 /* HazardReporter.app */;
+			name = HazardReporter;
+			productName = HazardReporter;
+			productReference = F20E3AE62074EE3E00FDE78B /* HazardReporter.app */;
 			productType = "com.apple.product-type.application";
-		};
-		708AB1AB25854E0F00DE21B9 /* HazardReporter (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 708AB1D525854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "HazardReporter (macOS)" */;
-			buildPhases = (
-				708AB1A825854E0F00DE21B9 /* Sources */,
-				708AB1A925854E0F00DE21B9 /* Frameworks */,
-				708AB1AA25854E0F00DE21B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "HazardReporter (macOS)";
-			productName = "HazardReporter (macOS)";
-			productReference = 708AB1AC25854E0F00DE21B9 /* HazardReporter.app */;
-			productType = "com.apple.product-type.application";
-		};
-		708AB1B325854E0F00DE21B9 /* Tests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 708AB1D825854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
-			buildPhases = (
-				708AB1B025854E0F00DE21B9 /* Sources */,
-				708AB1B125854E0F00DE21B9 /* Frameworks */,
-				708AB1B225854E0F00DE21B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				708AB1B625854E0F00DE21B9 /* PBXTargetDependency */,
-			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = 708AB1B425854E0F00DE21B9 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		708AB1BE25854E0F00DE21B9 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 708AB1DB25854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				708AB1BB25854E0F00DE21B9 /* Sources */,
-				708AB1BC25854E0F00DE21B9 /* Frameworks */,
-				708AB1BD25854E0F00DE21B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				708AB1C125854E0F00DE21B9 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 708AB1BF25854E0F00DE21B9 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		708AB19525854E0D00DE21B9 /* Project object */ = {
+		F20E3ADE2074EE3E00FDE78B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = pluralsight;
 				TargetAttributes = {
-					708AB1A325854E0F00DE21B9 = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					708AB1AB25854E0F00DE21B9 = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					708AB1B325854E0F00DE21B9 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 708AB1A325854E0F00DE21B9;
-					};
-					708AB1BE25854E0F00DE21B9 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 708AB1AB25854E0F00DE21B9;
+					F20E3AE52074EE3E00FDE78B = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 708AB19825854E0D00DE21B9 /* Build configuration list for PBXProject "HazardReporter" */;
+			buildConfigurationList = F20E3AE12074EE3E00FDE78B /* Build configuration list for PBXProject "HazardReporter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,108 +140,65 @@
 				en,
 				Base,
 			);
-			mainGroup = 708AB19425854E0D00DE21B9;
-			productRefGroup = 708AB1A525854E0F00DE21B9 /* Products */;
+			mainGroup = F20E3ADD2074EE3E00FDE78B;
+			productRefGroup = F20E3AE72074EE3E00FDE78B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				708AB1A325854E0F00DE21B9 /* HazardReporter (iOS) */,
-				708AB1AB25854E0F00DE21B9 /* HazardReporter (macOS) */,
-				708AB1B325854E0F00DE21B9 /* Tests iOS */,
-				708AB1BE25854E0F00DE21B9 /* Tests macOS */,
+				F20E3AE52074EE3E00FDE78B /* HazardReporter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		708AB1A225854E0F00DE21B9 /* Resources */ = {
+		F20E3AE42074EE3E00FDE78B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				708AB1CE25854E0F00DE21B9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1AA25854E0F00DE21B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708AB1CF25854E0F00DE21B9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1B225854E0F00DE21B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1BD25854E0F00DE21B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F20E3AF42074EE4000FDE78B /* LaunchScreen.storyboard in Resources */,
+				F20E3AF12074EE4000FDE78B /* Assets.xcassets in Resources */,
+				F20E3AEF2074EE3E00FDE78B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		708AB1A025854E0F00DE21B9 /* Sources */ = {
+		F20E3AE22074EE3E00FDE78B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				708AB1C825854E0F00DE21B9 /* HazardReporterApp.swift in Sources */,
-				708AB1CC25854E0F00DE21B9 /* Persistence.swift in Sources */,
-				708AB1C625854E0F00DE21B9 /* HazardReporter.xcdatamodeld in Sources */,
-				708AB1CA25854E0F00DE21B9 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1A825854E0F00DE21B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708AB1C925854E0F00DE21B9 /* HazardReporterApp.swift in Sources */,
-				708AB1CD25854E0F00DE21B9 /* Persistence.swift in Sources */,
-				708AB1C725854E0F00DE21B9 /* HazardReporter.xcdatamodeld in Sources */,
-				708AB1CB25854E0F00DE21B9 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1B025854E0F00DE21B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708AB1B925854E0F00DE21B9 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708AB1BB25854E0F00DE21B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708AB1C425854E0F00DE21B9 /* Tests_macOS.swift in Sources */,
+				F20E3B022074EF6A00FDE78B /* ActiveHazardReportsViewController.swift in Sources */,
+				F20E3B032074EF6A00FDE78B /* EditHazardReportViewController.swift in Sources */,
+				F20E3B052074EF6A00FDE78B /* HazardReportDetailsViewController.swift in Sources */,
+				F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */,
+				F20E3B042074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		708AB1B625854E0F00DE21B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 708AB1A325854E0F00DE21B9 /* HazardReporter (iOS) */;
-			targetProxy = 708AB1B525854E0F00DE21B9 /* PBXContainerItemProxy */;
+/* Begin PBXVariantGroup section */
+		F20E3AED2074EE3E00FDE78B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20E3AEE2074EE3E00FDE78B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
 		};
-		708AB1C125854E0F00DE21B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 708AB1AB25854E0F00DE21B9 /* HazardReporter (macOS) */;
-			targetProxy = 708AB1C025854E0F00DE21B9 /* PBXContainerItemProxy */;
+		F20E3AF22074EE4000FDE78B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20E3AF32074EE4000FDE78B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
 		};
-/* End PBXTargetDependency section */
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		708AB1D025854E0F00DE21B9 /* Debug */ = {
+		F20E3AF62074EE4000FDE78B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -406,13 +224,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -431,15 +249,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		708AB1D125854E0F00DE21B9 /* Release */ = {
+		F20E3AF72074EE4000FDE78B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -465,13 +284,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -484,259 +303,73 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		708AB1D325854E0F00DE21B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HazardReporter.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilionicoli.HazardReporter;
-				PRODUCT_NAME = HazardReporter;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		708AB1D425854E0F00DE21B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HazardReporter.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilionicoli.HazardReporter;
-				PRODUCT_NAME = HazardReporter;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		708AB1D625854E0F00DE21B9 /* Debug */ = {
+		F20E3AF92074EE4000FDE78B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				DEVELOPMENT_TEAM = 3534V3UJNS;
+				INFOPLIST_FILE = HazardReporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilionicoli.HazardReporter;
-				PRODUCT_NAME = HazardReporter;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.HazardReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		708AB1D725854E0F00DE21B9 /* Release */ = {
+		F20E3AFA2074EE4000FDE78B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emilionicoli.HazardReporter;
-				PRODUCT_NAME = HazardReporter;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		708AB1D925854E0F00DE21B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				DEVELOPMENT_TEAM = 3534V3UJNS;
+				INFOPLIST_FILE = HazardReporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emilionicoli.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.HazardReporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "HazardReporter (iOS)";
-			};
-			name = Debug;
-		};
-		708AB1DA25854E0F00DE21B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emilionicoli.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "HazardReporter (iOS)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		708AB1DC25854E0F00DE21B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emilionicoli.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "HazardReporter (macOS)";
-			};
-			name = Debug;
-		};
-		708AB1DD25854E0F00DE21B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8BMK2NCK67;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emilionicoli.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "HazardReporter (macOS)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		708AB19825854E0D00DE21B9 /* Build configuration list for PBXProject "HazardReporter" */ = {
+		F20E3AE12074EE3E00FDE78B /* Build configuration list for PBXProject "HazardReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				708AB1D025854E0F00DE21B9 /* Debug */,
-				708AB1D125854E0F00DE21B9 /* Release */,
+				F20E3AF62074EE4000FDE78B /* Debug */,
+				F20E3AF72074EE4000FDE78B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		708AB1D225854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "HazardReporter (iOS)" */ = {
+		F20E3AF82074EE4000FDE78B /* Build configuration list for PBXNativeTarget "HazardReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				708AB1D325854E0F00DE21B9 /* Debug */,
-				708AB1D425854E0F00DE21B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708AB1D525854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "HazardReporter (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				708AB1D625854E0F00DE21B9 /* Debug */,
-				708AB1D725854E0F00DE21B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708AB1D825854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				708AB1D925854E0F00DE21B9 /* Debug */,
-				708AB1DA25854E0F00DE21B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708AB1DB25854E0F00DE21B9 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				708AB1DC25854E0F00DE21B9 /* Debug */,
-				708AB1DD25854E0F00DE21B9 /* Release */,
+				F20E3AF92074EE4000FDE78B /* Debug */,
+				F20E3AFA2074EE4000FDE78B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		708AB19A25854E0D00DE21B9 /* HazardReporter.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				708AB19B25854E0D00DE21B9 /* Shared.xcdatamodel */,
-			);
-			currentVersion = 708AB19B25854E0D00DE21B9 /* Shared.xcdatamodel */;
-			path = HazardReporter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 708AB19525854E0D00DE21B9 /* Project object */;
+	rootObject = F20E3ADE2074EE3E00FDE78B /* Project object */;
 }
