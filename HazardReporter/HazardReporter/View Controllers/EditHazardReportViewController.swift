@@ -1,4 +1,5 @@
 import UIKit
+import CloudKit
 import AVFoundation
 import CoreLocation
 
@@ -155,6 +156,34 @@ CLLocationManagerDelegate {
     }
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let hazardReport = CKRecord(recordType: "HazardReport")
+        hazardReport["isEmergency"] = emergencySegmentedControl.selectedSegmentIndex as NSNumber
+        hazardReport["hazardDescription"] = hazardDescriptionTextView.text as NSString
+        hazardReport["hazardLocation"] = currentLocation
+        hazardReport["isResolved"] = NSNumber(integerLiteral: 0) // no booleans
+        
+        if let hazardPhoto = hazardImageView.image {
+            // Generate unique file name
+            let hazardPhotoFileName = ProcessInfo.processInfo.globallyUniqueString + ".jpg"
+            
+            // Create4 URL in temp directory
+            let hazardPhotoFileURL = URL.init(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(hazardPhotoFileName)
+            
+            // Make JPEG
+            let hazardPhotoData = UIImageJPEGRepresentation(hazardPhoto, 0.70)
+            
+            // Write to disk
+            do {
+                try hazardPhotoData?.write(to: hazardPhotoFileURL)
+            } catch {
+                print("Could not save hazard photo to disk")
+            }
+            
+            // Convert to CKAsset and store with CKRecord
+            hazardReport["hazardPhoto"] = CKAsset(fileURL: hazardPhotoFileURL)
+        }
+        
         self.dismiss(animated: true, completion: nil)
         
     }
