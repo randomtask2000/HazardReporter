@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70215E5325952B6E001BCC81 /* HazardReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70215E5225952B6E001BCC81 /* HazardReport.swift */; };
 		70DD89A82593C1E100B44103 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD89A72593C1E100B44103 /* CloudKit.framework */; };
 		F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */; };
 		F20E3AEF2074EE3E00FDE78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AED2074EE3E00FDE78B /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70215E5225952B6E001BCC81 /* HazardReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HazardReport.swift; sourceTree = "<group>"; };
 		70DD89A42593C1DC00B44103 /* HazardReporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HazardReporter.entitlements; sourceTree = "<group>"; };
 		70DD89A72593C1E100B44103 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F20E3AE62074EE3E00FDE78B /* HazardReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazardReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		F20E3AFB2074EF2300FDE78B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				70215E5225952B6E001BCC81 /* HazardReport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				F20E3B052074EF6A00FDE78B /* HazardReportDetailsViewController.swift in Sources */,
 				F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */,
 				F20E3B042074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift in Sources */,
+				70215E5325952B6E001BCC81 /* HazardReport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

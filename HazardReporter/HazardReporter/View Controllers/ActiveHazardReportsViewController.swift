@@ -1,4 +1,5 @@
 import UIKit
+import CloudKit
 
 class ActiveHazardReportsViewController:    UIViewController,
     UITableViewDataSource,
@@ -6,10 +7,28 @@ class ActiveHazardReportsViewController:    UIViewController,
 {
     
     @IBOutlet weak var tableView: UITableView!
+    var hazardReports = [HazardReport]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let predicate = NSPredicate(format: "isResolved == 0")
+        let activeHazardsQuery = CKQuery(recordType: "HazardReport", predicate: predicate)
+        
+        let creationDateSortDescriptor = NSSortDescriptor(key: "creationDate", ascending: true)
+        activeHazardsQuery.sortDescriptors = [creationDateSortDescriptor]
+        
+        CKContainer.default().publicCloudDatabase.perform(activeHazardsQuery,
+                                                          inZoneWith: nil)
+        { (records, error) in
+            guard let records = records else {return}
+            self.hazardReports = records.map { HazardReport(record:$0) }
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
