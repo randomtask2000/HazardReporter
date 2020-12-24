@@ -160,6 +160,7 @@ CLLocationManagerDelegate {
         let hazardReport = CKRecord(recordType: "HazardReport")
         hazardReport["isEmergency"] = emergencySegmentedControl.selectedSegmentIndex as NSNumber
         hazardReport["hazardDescription"] = hazardDescriptionTextView.text as NSString
+        hazardReport["hazardDummyField"] = hazardDescriptionTextView.text as NSString
         hazardReport["hazardLocation"] = currentLocation
         hazardReport["isResolved"] = NSNumber(integerLiteral: 0) // no booleans
         
@@ -179,13 +180,24 @@ CLLocationManagerDelegate {
             } catch {
                 print("Could not save hazard photo to disk")
             }
-            
             // Convert to CKAsset and store with CKRecord
             hazardReport["hazardPhoto"] = CKAsset(fileURL: hazardPhotoFileURL)
         }
         
-        self.dismiss(animated: true, completion: nil)
+        // database stuff
+        let container = CKContainer.default()
+        let database = container.publicCloudDatabase
         
+        database.save(hazardReport) { (savedRecord, error) in
+            // Stay tuned
+            if error != nil {
+                print(error.debugDescription)
+            } else {
+                print("no error folks!")
+            }
+        }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Navigation

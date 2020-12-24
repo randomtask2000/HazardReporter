@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70DD89A82593C1E100B44103 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD89A72593C1E100B44103 /* CloudKit.framework */; };
 		F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */; };
 		F20E3AEF2074EE3E00FDE78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AED2074EE3E00FDE78B /* Main.storyboard */; };
 		F20E3AF12074EE4000FDE78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AF02074EE4000FDE78B /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70DD89A42593C1DC00B44103 /* HazardReporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HazardReporter.entitlements; sourceTree = "<group>"; };
+		70DD89A72593C1E100B44103 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F20E3AE62074EE3E00FDE78B /* HazardReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazardReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F20E3AEE2074EE3E00FDE78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,17 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DD89A82593C1E100B44103 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70DD89A62593C1E100B44103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70DD89A72593C1E100B44103 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F20E3ADD2074EE3E00FDE78B = {
 			isa = PBXGroup;
 			children = (
 				F20E3AE82074EE3E00FDE78B /* HazardReporter */,
 				F20E3AE72074EE3E00FDE78B /* Products */,
+				70DD89A62593C1E100B44103 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,7 @@
 		F20E3AE82074EE3E00FDE78B /* HazardReporter */ = {
 			isa = PBXGroup;
 			children = (
+				70DD89A42593C1DC00B44103 /* HazardReporter.entitlements */,
 				F20E3AFB2074EF2300FDE78B /* Model */,
 				F20E3AFC2074EF3100FDE78B /* Views & Assets */,
 				F20E3AFD2074EF4200FDE78B /* View Controllers */,
@@ -316,15 +330,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HazardReporter/HazardReporter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3534V3UJNS;
+				DEVELOPMENT_TEAM = 8BMK2NCK67;
 				INFOPLIST_FILE = HazardReporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.HazardReporter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilionicoli.HazardReporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,15 +351,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HazardReporter/HazardReporter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3534V3UJNS;
+				DEVELOPMENT_TEAM = 8BMK2NCK67;
 				INFOPLIST_FILE = HazardReporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.HazardReporter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilionicoli.HazardReporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
